@@ -11,9 +11,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 
 @Composable //The home where the user selects exercise
-fun HomeScreen(){
+fun HomeScreen(navController: NavController){
 
     // Full screen allows everything to be in the middle of the screen
     Column(
