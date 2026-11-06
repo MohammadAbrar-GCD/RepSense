@@ -16,6 +16,7 @@ import androidx.navigation.NavController
 @Composable //Shows previous workouts
 fun HistoryScreen(navController: NavController){
 
+
     // Full screen allows everything to be in the middle of the screen
     Column(
         modifier = Modifier.fillMaxSize(),
