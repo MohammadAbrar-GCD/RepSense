@@ -11,9 +11,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
-@Composable //Shows previous workouts
+//Shows previous workouts
+@Composable
 fun HistoryScreen(navController: NavController){
 
 
@@ -24,11 +26,13 @@ fun HistoryScreen(navController: NavController){
         horizontalAlignment = Alignment.CenterHorizontally
 
     ) {
-        Text(text = "History")
+        Text(text = "History", fontSize = 28.sp)
         Spacer(modifier = Modifier.height(10.dp))
-        Button(onClick = { }) {
-            Text(text = "History settings")
-        }
+
+        //sample data for now, will use data base
+        Text("Mon 2 Nov - Push-ups - 3 sets - 54 reps")
+        Text("Tues 3 Nov - Push-ups - 3 sets - 55 reps")
+        Text("Wed 4 Nov - Push-ups - 3 sets - 50 reps")
 
     }
 
