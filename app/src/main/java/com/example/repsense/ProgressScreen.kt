@@ -5,7 +5,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
-import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -23,11 +22,16 @@ fun ProgressScreen(navController: NavController){
         horizontalAlignment = Alignment.CenterHorizontally
 
     ) {
-        Text(text = "Progress")
+        //Placeholder data
+        Text("Total reps this week: 159")
+        Text("Best set: 25 reps")
+        Text("Workouts this week: 3")
+        Text("Current streak: 3 days")
+
         Spacer(modifier = Modifier.height(10.dp))
-        Button(onClick = { }) {
-            Text(text = "Progression")
-        }
+
+        //placeholder chart
+        Text("Weekly chart coming soon")
 
     }
 
